@@ -30,7 +30,7 @@ function Home() {
     ];
 
     const fetchWeatherData = async (city) => {
-      const url = `http://api.weatherapi.com/v1/current.json?key=e6d92c11c9384c31aba94149240109&q=${city}&aqi=yes`;
+      const url = `https://api.weatherapi.com/v1/current.json?key=e6d92c11c9384c31aba94149240109&q=${city}&aqi=yes`;
       return fetch(url).then((response) => response.json());
     };
 
@@ -58,7 +58,7 @@ function Home() {
     ];
 
     const fetchWeatherData2 = async (city) => {
-      const url = `http://api.weatherapi.com/v1/forecast.json?key=e6d92c11c9384c31aba94149240109&q=${city}&days=4&aqi=yes&alerts=no`;
+      const url = `https://api.weatherapi.com/v1/forecast.json?key=e6d92c11c9384c31aba94149240109&q=${city}&days=4&aqi=yes&alerts=no`;
       return fetch(url).then((response) => response.json());
     };
 
@@ -86,7 +86,7 @@ function Home() {
     ];
 
     const fetchWeatherData3 = async (city) => {
-      const url = `http://api.weatherapi.com/v1/astronomy.json?key=e6d92c11c9384c31aba94149240109&q=${city}`;
+      const url = `https://api.weatherapi.com/v1/astronomy.json?key=e6d92c11c9384c31aba94149240109&q=${city}`;
       return fetch(url).then((response) => response.json());
     };
 
