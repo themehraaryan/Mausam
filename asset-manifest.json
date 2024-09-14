@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Mausam/static/css/main.dc536f33.css",
+    "main.js": "/Mausam/static/js/main.4b552b74.js",
+    "static/js/453.8057713e.chunk.js": "/Mausam/static/js/453.8057713e.chunk.js",
+    "static/media/shanghai.jpg": "/Mausam/static/media/shanghai.f9fb1aa8c6c9fac80612.jpg",
+    "static/media/new york.jpg": "/Mausam/static/media/new york.506d2ad0cd431204fc1a.jpg",
+    "static/media/tokyo.jpg": "/Mausam/static/media/tokyo.e0d7e4fe49f7a8dc8ae8.jpg",
+    "static/media/moscow.jpg": "/Mausam/static/media/moscow.b14eb6e04895c9edc569.jpg",
+    "static/media/london.jpg": "/Mausam/static/media/london.61b9b2e585f8ed0d5447.jpg",
+    "static/media/new delhi.jpg": "/Mausam/static/media/new delhi.dbf89986a5ab51b51436.jpg",
+    "static/media/dubai.jpg": "/Mausam/static/media/dubai.ac18c9b0b237d5d27ae7.jpg",
+    "static/media/sydney.jpg": "/Mausam/static/media/sydney.5a9e1da84ad7ca7bd919.jpg",
+    "static/media/paris.jpg": "/Mausam/static/media/paris.03146926fd1817726711.jpg",
+    "static/media/spinner.gif": "/Mausam/static/media/spinner.c47b90965fd6b24da9ea.gif",
+    "index.html": "/Mausam/index.html",
+    "main.dc536f33.css.map": "/Mausam/static/css/main.dc536f33.css.map",
+    "main.4b552b74.js.map": "/Mausam/static/js/main.4b552b74.js.map",
+    "453.8057713e.chunk.js.map": "/Mausam/static/js/453.8057713e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc536f33.css",
+    "static/js/main.4b552b74.js"
+  ]
+}
