@@ -19,7 +19,7 @@ const Navbar = ({onSearchModeToggle, onSearch}) => {
   const fetchSuggestions = async (query) => {
     try {
       const response = await axios.get(
-        `http://api.weatherapi.com/v1/search.json?key=e6d92c11c9384c31aba94149240109&q=${query}`
+        `https://api.weatherapi.com/v1/search.json?key=e6d92c11c9384c31aba94149240109&q=${query}`
       );
 
       const suggestionNames = response.data.map((item) => item.name);
