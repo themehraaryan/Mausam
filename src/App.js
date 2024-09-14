@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Navbar from "./components/Navbar.js";
+import Home from "./components/Home.js";
+import SearchResult from './components/SearchResult.js';
 
 function App() {
+  const [isSearchMode, setIsSearchMode] = useState(false);
+  const [query, setQuery] = useState("");
+
+  const handleSearchModeToggle = (searching) => {
+    setIsSearchMode(searching);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar 
+        onSearchModeToggle={handleSearchModeToggle} 
+        onSearch={(q) => setQuery(q)} // Pass the query to the state
+      />
+      {isSearchMode ? <SearchResult query={query} /> : <Home />}
     </div>
   );
 }
