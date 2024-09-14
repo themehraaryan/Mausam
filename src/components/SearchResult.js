@@ -23,9 +23,9 @@ function SearchResult({ query }) {
         try {
           setLoading(true); // Start loading
           
-          const currentUrl = `http://api.weatherapi.com/v1/current.json?key=e6d92c11c9384c31aba94149240109&q=${query}&aqi=yes`;
-          const astronomyUrl = `http://api.weatherapi.com/v1/astronomy.json?key=e6d92c11c9384c31aba94149240109&q=${query}`;
-          const forecastUrl = `http://api.weatherapi.com/v1/forecast.json?key=e6d92c11c9384c31aba94149240109&q=${query}&days=10&aqi=no&alerts=no`;
+          const currentUrl = `https://api.weatherapi.com/v1/current.json?key=e6d92c11c9384c31aba94149240109&q=${query}&aqi=yes`;
+          const astronomyUrl = `https://api.weatherapi.com/v1/astronomy.json?key=e6d92c11c9384c31aba94149240109&q=${query}`;
+          const forecastUrl = `https://api.weatherapi.com/v1/forecast.json?key=e6d92c11c9384c31aba94149240109&q=${query}&days=10&aqi=no&alerts=no`;
 
           const [currentResponse, astronomyResponse, forecastResponse] = await Promise.all([
             fetch(currentUrl),
