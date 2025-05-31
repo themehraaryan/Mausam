@@ -66,10 +66,6 @@ const Card = (props) => {
               <p>{temp_c2}° C</p>
               <p>{localDate2}</p>
             </div>
-            <div className="hourlyTempC">
-              <p>{temp_c3}° C</p>
-              <p>{localDate3}</p>
-            </div>
           </div>
 
           <div className="secText d-flex justify-content-between container">
