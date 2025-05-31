@@ -53,7 +53,7 @@ const Navbar = ({onSearchModeToggle, onSearch}) => {
         isDarkTheme navbar-dark bg-dark fixed-top"
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="https://mister-aryanmehra.github.io/Mausam/">
+        <a className="navbar-brand" href="https://themehraaryan.github.io/Mausam/">
           MAUSAM
         </a>
         <button
