@@ -55,7 +55,7 @@ const Navbar = ({onSearchModeToggle, onSearch}) => {
       <div className="container-fluid">
         <a className="navbar-brand" href="https://themehraaryan.github.io/Mausam/">
           MAUSAM
-        </a>
+        <a/>
         <button
           className="navbar-toggler"
           type="button"
