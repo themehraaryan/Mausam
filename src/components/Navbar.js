@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
-const Navbar = ({onSearchModeToggle, onSearch}) => {
+const Navbar = ({ onSearchModeToggle, onSearch }) => {
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
 
@@ -53,9 +53,13 @@ const Navbar = ({onSearchModeToggle, onSearch}) => {
         isDarkTheme navbar-dark bg-dark fixed-top"
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="https://themehraaryan.github.io/Mausam/">
+        <span
+          className="navbar-brand"
+          onClick={() => onSearchModeToggle(false)}
+          style={{ cursor: 'pointer' }}
+        >
           MAUSAM
-        <a/>
+        </span>
         <button
           className="navbar-toggler"
           type="button"

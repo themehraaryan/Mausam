@@ -192,13 +192,6 @@ function Home() {
                   info.forecast[index]?.forecast.forecastday[2]?.day
                     .avgtemp_c || ""
                 }
-                localDate3={formatDateTime(
-                  info.forecast[index]?.forecast.forecastday[3]?.date || ""
-                )}
-                temp_c3={
-                  info.forecast[index]?.forecast.forecastday[3]?.day
-                    .avgtemp_c || ""
-                }
               />
             ))}
           </div>

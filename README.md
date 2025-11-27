@@ -1,70 +1,161 @@
-# Getting Started with Create React App
+# Mausam - Weather Web App 🌤️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beautiful, responsive weather application built with React that provides real-time weather information for major cities around the world.
 
-## Available Scripts
+## 🌟 Features
+
+- **Real-time Weather Data**: Get current weather conditions for 9 major cities worldwide
+- **Detailed Weather Information**: 
+  - Current temperature and "feels like" temperature
+  - Humidity levels and precipitation chances
+  - Air quality index (PM 2.5)
+  - Sunrise and sunset times
+  - Hourly forecast
+  - Wind speed and direction
+  - Air quality parameters (PM 2.5, PM 10, NO2, SO2, O3)
+- **City Search**: Search for any city worldwide with autocomplete suggestions
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
+- **Beautiful UI**: Modern dark theme with city-specific background images
+
+## 🚀 Live Demo
+
+Visit the live app at: [https://themehraaryan.github.io/Mausam/](https://themehraaryan.github.io/Mausam/)
+
+## 🛠️ Technologies Used
+
+- **React** - Frontend framework
+- **Bootstrap 5** - CSS framework for responsive design
+- **WeatherAPI** - Weather data provider
+- **Axios** - HTTP client for API requests
+- **GitHub Pages** - Hosting platform
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/themehraaryan/Mausam.git
+cd Mausam
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm start
+```
+
+The app will open at [http://localhost:3000](http://localhost:3000)
+
+## 🏗️ Build & Deploy
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Deploy to GitHub Pages
+```bash
+npm run deploy
+```
+
+This will automatically build the app and push it to the `gh-pages` branch.
+
+## 📂 Project Structure
+
+```
+Mausam/
+├── public/
+│   ├── index.html
+│   ├── logo.png
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── Card.js          # Weather card component
+│   │   ├── Home.js          # Home page with city cards
+│   │   ├── Navbar.js        # Navigation bar
+│   │   ├── SearchResult.js  # Search results page
+│   │   ├── Spinning2.js     # Loading spinner
+│   │   └── covers/          # City background images
+│   ├── App.js               # Main app component
+│   ├── App.css              # Styles
+│   └── index.js             # Entry point
+├── package.json
+└── README.md
+```
+
+## 🎨 Features Breakdown
+
+### Home Page
+- Displays weather cards for 9 major cities: New Delhi, New York, London, Dubai, Sydney, Tokyo, Paris, Shanghai, and Moscow
+- Each card shows:
+  - Current temperature
+  - 2-day forecast
+  - Humidity
+  - Rain chances
+  - Air quality (PM 2.5)
+  - Feels like temperature
+  - Sunrise and sunset times
+
+### Search Functionality
+- Type-ahead search with city suggestions
+- Comprehensive weather details for searched cities:
+  - Current conditions
+  - Min/max temperatures
+  - Hourly forecast (next 8 hours)
+  - Air quality parameters
+  - Wind information
+  - Detailed weather metrics
+
+## 🔑 API Key
+
+This project uses the [WeatherAPI](https://www.weatherapi.com/) for weather data. The API key is included in the code for demonstration purposes. For production use, please:
+
+1. Sign up for your own free API key at [WeatherAPI](https://www.weatherapi.com/)
+2. Replace the API key in the following files:
+   - `src/components/Home.js`
+   - `src/components/Navbar.js`
+   - `src/components/SearchResult.js`
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest new features
+- Submit pull requests
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+## 👨‍💻 Developer
+
+Created with ❤️ by [Aryan Mehra](https://www.linkedin.com/in/mister-aryanmehra/)
+
+## 🌍 Climate Change Awareness
+
+This app is dedicated to raising awareness about climate change. Learn more about [Climate Change](https://en.wikipedia.org/wiki/Climate_change) and how we can make a difference.
+
+---
+
+### Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+#### `npm start`
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### `npm test`
+Launches the test runner in interactive watch mode.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### `npm run build`
+Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### `npm test`
+#### `npm run deploy`
+Builds and deploys the app to GitHub Pages.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Note**: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

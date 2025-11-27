@@ -18,8 +18,6 @@ const Card = (props) => {
     temp_c1,
     localDate2,
     temp_c2,
-    localDate3,
-    temp_c3,
     aqi_f,
     humidity,
     rain,
